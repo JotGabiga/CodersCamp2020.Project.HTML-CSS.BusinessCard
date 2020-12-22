@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    /* scroll-margin: 100px; */
 }
 
 body {
@@ -27,19 +26,75 @@ body {
     filter: opacity(90%);
 }
 
+#topBar710 {
+    display: none;
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+    border-bottom: 0.5px solid rgb(196, 60, 60);
+    z-index: 3;
+    filter: opacity(90%);
+    flex-direction: column;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 26px;
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+#checkbox {
+    display: none;
+}
+
+input:checked~.dropdown-content {
+    display: flex;
+}
+
+input:checked~.burger {
+    display: none;
+}
+
+.burger_close {
+    display: none;
+}
+
+input:checked~.burger_close {
+    display: block;
+}
+
 #nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
+    width: 50%;
+}
+
+#nav710 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .navText {
     font-size: 16px;
-    font-family: fira-sans, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #0f0f0f;
-    margin-right: 40px;
-    word-wrap: none;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .navText:hover {
@@ -47,12 +102,12 @@ body {
     cursor: pointer;
 }
 
-#logo {
-    font-size: 40px;
+.logo {
+    font-size: 39px;
     color: #0f0f0f;
     text-align: left;
     padding: 25px;
-    font-family: fira-sans;
+    font-family: 'Source Sans Pro', sans-serif;
     width: 30%;
 }
 
@@ -61,82 +116,81 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    position: relative;
+    padding-top: 100px;
 }
 
-#projects {
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: row;
     position: relative;
 }
 
 #description {
-    font-size: 20px;
+    font-size: 1vw;
     color: #cacaca;
     text-align: center;
-    padding-top: 190px;
-    font-family: 'Quicksand', sans-serif;
+    padding: 5.7vw;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    /* text-transform: uppercase; */
+    height: calc(50vh - 5vh);
+    width: 50%;
 }
 
 .project {
     width: 33.3333333%;
-    height: auto;
-    max-height: 1000px;
     transition: 2s ease;
     backface-visibility: hidden;
     filter: brightness(45%) contrast(120%) grayscale(30%) blur(0px);
-    padding-top: 95px;
+}
+
+.project>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.slideshowontainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 .project:hover {
     filter: brightness(100%) contrast(100%) grayscale(0%);
 }
 
-#project1 {
-    object-fit: cover;
-    width: 100%;
-    height: 900px;
-    backface-visibility: hidden;
-}
-
-#project2 {
-    object-fit: cover;
-    width: 100%;
-    height: 900px;
-    backface-visibility: hidden;
-}
-
-#project3 {
-    object-fit: cover;
-    width: 100%;
-    height: 900px;
-    backface-visibility: hidden;
+.test {
+    position: relative;
 }
 
 .projectDescription {
     position: absolute;
     color: #cacaca;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    transition: opacity 1s
-    /* todo: ukryc napis przy hover */
+    transition: opacity 1s;
 }
 
 #projectDescription1 {
-    top: 85%;
-    left: 3%;
-    font-size: 30px;
+    top: 80%;
+    left: 10%;
 }
 
 #projectDescription2 {
-    top: 85%;
-    left: 36.333%;
-    font-size: 20px;
+    top: 80%;
+    left: 10%;
 }
 
 #projectDescription3 {
-    top: 85%;
-    left: 69.666%;
-    font-size: 20px;
+    top: 80%;
+    left: 10%;
 }
 
 .project:hover+.projectDescription {
@@ -144,33 +198,56 @@ body {
 }
 
 .projectDescription>div:first-child {
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: 400;
 }
 
 .projectDescription>div:nth-child(2) {
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 #cooperation {
     width: 100%;
-    font-size: 30px;
+    font-size: 1vw;
     color: #cacaca;
-    padding-top: 95px;
+    padding-top: 100px;
+}
+
+.wrapper {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .copTitle {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     text-align: center;
-    padding: 70px;
-    font-size: 24px;
+    padding: 2.5vw 0 5.5vw 0;
+    font-size: 1.5vw;
+    color: #dbdbdb;
 }
 
 .wrapperDes {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.wrapperCon>.testd:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.wrapperCon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.testd {
+    width: 50%;
+    display: flex;
 }
 
 .wrapperDes>i {
@@ -193,16 +270,51 @@ body {
     font-size: 4vw;
 }
 
+.contactIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    color: #fffefe;
+}
+
 .copDes {
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    padding: 70px;
+    font-size: 1vw;
+    padding: 4vw;
+    color: #f1eeee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactDes {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    padding-top: 100px;
+    color: #f1eeee;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copDes2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: #f1eeee;
+    width: 50%;
+    padding-left: 5%;
 }
 
 .copDes>span {
-    font-size: 24px;
+    font-size: 1.5vw;
     margin-bottom: 5px;
     color: rgb(143, 94, 94);
     display: block;
@@ -210,11 +322,11 @@ body {
 }
 
 #contact {
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: center;
-    padding: 95px 0px 40px 0px;
+    padding: 100px 0px 40px 0px;
     color: #cacaca;
 }
 
@@ -258,13 +370,14 @@ form {
 label {
     align-self: flex-start;
     color: #cacaca;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
+    font-size: 1vw;
 }
 
 #footer {
     font-size: 14px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: #0f0f0f;
     justify-content: center;
@@ -286,8 +399,8 @@ label {
 }
 
 #socialMedia {
-    font-size: 40px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 3vw;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: #0f0f0f;
     text-align: right;
@@ -295,4 +408,154 @@ label {
 
 a {
     text-decoration: none;
+}
+
+#date {
+    background-color: #524f4f;
+    align-self: flex-end;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #6b6b6b;
+    color: #cacaca;
+    height: 41px;
+}
+
+@media only screen and (max-width:709px) {
+    #topBar710 {
+        display: flex;
+    }
+    #topBar {
+        display: none;
+    }
+    .navText {
+        margin: 10px;
+        font-size: 3.2vw;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    #description {
+        font-size: 3.2vw;
+    }
+    #contact {
+        font-size: 3.2vw;
+    }
+    .copDes {
+        font-size: 3.2vw;
+    }
+    .copDes>span {
+        font-size: 5vw;
+    }
+    .copTitle {
+        font-size: 5vw;
+    }
+    .dotIcon {
+        width: 20vw;
+        height: 20vw;
+        font-size: 10vw;
+    }
+    .projectDescription>div:first-child {
+        font-size: 5vw;
+    }
+    .projectDescription>div:nth-child(2) {
+        font-size: 3.2vw;
+    }
+    label {
+        font-size: 3.2vw;
+    }
+    #socialMedia {
+        font-size: 5vw;
+    }
+    .copDes2 {
+        font-size: 3.2vw;
+    }
+    .contactDes {
+        font-size: 3.2vw;
+    }
+    #description {
+        padding-top: 100px;
+    }
+    .content {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 710px) and (max-width: 910px) {
+    #topBar710 {
+        display: flex;
+    }
+    #topBar {
+        display: none;
+    }
+    .navText {
+        margin: 10px;
+        font-size: 2.5vw;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    #description {
+        font-size: 2vw;
+    }
+    #contact {
+        font-size: 2vw;
+    }
+    .copDes {
+        font-size: 2vw;
+    }
+    .copDes>span {
+        font-size: 2.5vw;
+    }
+    .copTitle {
+        font-size: 2.5vw;
+    }
+    .dotIcon {
+        width: 20vw;
+        height: 20vw;
+        font-size: 10vw;
+    }
+    .projectDescription>div:first-child {
+        font-size: 2.5vw;
+    }
+    .projectDescription>div:nth-child(2) {
+        font-size: 2vw;
+    }
+    label {
+        font-size: 2vw;
+    }
+    #socialMedia {
+        font-size: 5vw;
+    }
+    .copDes2 {
+        font-size: 2vw;
+    }
+    .contactDes {
+        font-size: 2vw;
+    }
+    #description {
+        padding-top: 200px;
+    }
+    .content {
+        padding-top: 89px;
+    }
 }

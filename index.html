@@ -8,6 +8,7 @@
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_gallery.css">
     <link rel="stylesheet" href="https://use.typekit.net/nqb6efc.css">
     <link rel="stylesheet" href="https://use.typekit.net/nqb6efc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,11 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/709d65f8bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,7 +33,7 @@
     <div id="container">
         <div id="topBar">
             <a href="index.html">
-                <div id="logo">Rose<span style="color:rgb(173, 60, 45)">.</span><span style="font-family: fira-sans, sans-serif; text-transform: uppercase; font-size: 36px;">Studio</span></div>
+                <div class="logo">Rose<span style="color:rgb(173, 60, 45)">.</span><span style="font-family: fira-sans, sans-serif; text-transform: uppercase;">Studio</span></div>
             </a>
             <div id="nav">
                 <a href="#description">
@@ -40,11 +45,49 @@
                 <a href="#cooperation">
                     <div class="navText">Współpraca<span style="color:rgb(196, 60, 60)">.</span></div>
                 </a>
+                <a href="#realization">
+                    <div class="navText">Realizacje<span style="color:rgb(196, 60, 60)">.</span></div>
+                </a>
                 <a href="#contact">
                     <div class="navText">Kontakt<span style="color:rgb(196, 60, 60)">.</span></div>
                 </a>
 
             </div>
+        </div>
+        <div id="topBar710">
+
+            <div id="nav710">
+
+                <a href="index.html">
+                    <div class="logo">Rose<span style="color:rgb(173, 60, 45)">.</span><span>Studio</span></div>
+                </a>
+                <div class="dropdown">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="burger"><i class="fas fa-bars"></i></label>
+                    <label for="checkbox" class="burger_close"><i class="fas fa-times"></i></label>
+
+                    <div class="dropdown-content">
+                        <a href="#description">
+                            <div class="navText">O mnie<span style="color:rgb(196, 60, 60)">.</span></div>
+                        </a>
+                        <a href="#projects">
+                            <div class="navText">Projekty<span style="color:rgb(196, 60, 60)">.</span></div>
+                        </a>
+                        <a href="#cooperation">
+                            <div class="navText">Współpraca<span style="color:rgb(196, 60, 60)">.</span></div>
+                        </a>
+                        <a href="#realization">
+                            <div class="navText">Realizacje<span style="color:rgb(196, 60, 60)">.</span></div>
+                        </a>
+                        <a href="#contact">
+                            <div class="navText">Kontakt<span style="color:rgb(196, 60, 60)">.</span></div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <div class="content">
@@ -55,81 +98,157 @@
             </div>
         </div>
         <div class="content" id="projects">
-            <a href="project1.html" class="project">
-                <img id="project1" src=" images/wizsalon1.JPG " alt="Wizualizacja projekt RoseandRush">
-            </a>
-            <div class="projectDescription" id="projectDescription1">
-                <div>Rose&Rush</div>
-                <div>lokalizacja: Kraków<br>powierzchnia: 54m2<br>budżet: 2200zł/m2</div>
+
+            <div class="test">
+                <a href="project1.html" class="project">
+                    <img src=" images/wizsalon1.JPG " alt="Wizualizacja projekt RoseandRush">
+                </a>
+                <div class="projectDescription" id="projectDescription1">
+                    <div>Rose&Rush</div>
+                    <div>lokalizacja: Kraków<br>powierzchnia: 54m2<br>budżet: 2200zł/m2</div>
+                </div>
             </div>
 
-            <a href="project1.html" class="project">
-                <img id="project2" src="images/wizsalon5.JPG" alt="Wizualizacja projekt RoseandRush">
-            </a>
-            <div class="projectDescription" id="projectDescription2">
-                <div>Rose&Rush2</div>
-                <div>lokalizacja: Kraków<br>powierzchnia: 54m2<br>budżet: 2200zł/m2</div>
+
+            <div class="test">
+                <a href="project1.html" class="project">
+                    <img src="images/wizsalon5.JPG" alt="Wizualizacja projekt RoseandRush">
+                </a>
+                <div class="projectDescription" id="projectDescription2">
+                    <div>Rose&Rush2</div>
+                    <div>lokalizacja: Kraków<br>powierzchnia: 54m2<br>budżet: 2200zł/m2</div>
+                </div>
             </div>
 
-            <a href="project1.html" class="project">
-                <img id="project3" src=" images/wizsalon4.jpg " alt="Wizualizacja projekt RoseandRush">
-            </a>
-            <div class="projectDescription" id="projectDescription3">
-                <div>Rose&Rush3</div>
-                <div>lokalizacja: Kraków<br>powierzchnia: 54m2<br>budżet: 2200zł/m2</div>
+            <div class="test">
+                <a href="project1.html" class="project">
+                    <img src=" images/wizsalon4.jpg " alt="Wizualizacja projekt RoseandRush">
+                </a>
+                <div class="projectDescription" id="projectDescription3">
+                    <div>Rose&Rush3</div>
+                    <div>lokalizacja: Kraków<br>powierzchnia: 54m2<br>budżet: 2200zł/m2</div>
+                </div>
             </div>
+
+
+
+
         </div>
 
         <div id="cooperation">
-
             <div class="copTitle">Wybierz zakres projektu odpowiedni dla Ciebie</div>
-            <div class="wrapperDes">
-                <div class="dotIcon">
-                    <i class="fas fa-ruler-combined"></i>
+            <div class="wrapper">
+                <div class="wrapperDes">
+                    <div class="dotIcon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="copDes"><span>Aranżacja</span></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla dolor, mollis elementum odio sit amet, dapibus tempor tellus. Donec euismod velit maximus erat ultrices, semper efficitur diam bibendum.
+                        Proin rutrum urna id odio maximus, ut tincidunt ante consectetur. Duis neque dui, ultricies et sapien quis, viverra vestibulum tortor.</div>
                 </div>
-                <div class="dotIcon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
-                <div class="dotIcon">
-                    <i class="fas fa-pencil-ruler"></i>
-                </div>
-            </div>
-            <div class="wrapperDes">
-                <div class="copDes"><span>Aranżacja</span></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla dolor, mollis elementum odio sit amet, dapibus tempor tellus. Donec euismod velit maximus erat ultrices, semper efficitur diam bibendum. Proin
-                    rutrum urna id odio maximus, ut tincidunt ante consectetur. Duis neque dui, ultricies et sapien quis, viverra vestibulum tortor.</div>
-                <div class="copDes"><span>Koncepcja</span></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla dolor, mollis elementum odio sit amet, dapibus tempor tellus. Donec euismod velit maximus erat ultrices, semper efficitur diam bibendum. Proin
-                    rutrum urna id odio maximus, ut tincidunt ante consectetur. Duis neque dui, ultricies et sapien quis, viverra vestibulum tortor.</div>
-                <div class="copDes"><span>Kompletny projekt</span></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla dolor, mollis elementum odio sit amet, dapibus tempor tellus. Donec euismod velit maximus erat ultrices, semper efficitur diam bibendum.
-                    Proin rutrum urna id odio maximus, ut tincidunt ante consectetur. Duis neque dui, ultricies et sapien quis, viverra vestibulum tortor.</div>
-            </div>
 
-            <div class="wrapperDes">
-                <i class="fas fa-angle-down"></i>
-                <i class="fas fa-angle-down"></i>
-                <i class="fas fa-angle-down"></i>
+
+                <div class="wrapperDes">
+                    <div class="dotIcon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="copDes"><span>Koncepcja</span></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla dolor, mollis elementum odio sit amet, dapibus tempor tellus. Donec euismod velit maximus erat ultrices, semper efficitur diam bibendum.
+                        Proin rutrum urna id odio maximus, ut tincidunt ante consectetur. Duis neque dui, ultricies et sapien quis, viverra vestibulum tortor.</div>
+                </div>
+
+
+                <div class="wrapperDes">
+                    <div class="dotIcon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="copDes"><span>Kompletny projekt</span></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla dolor, mollis elementum odio sit amet, dapibus tempor tellus. Donec euismod velit maximus erat ultrices, semper efficitur diam bibendum.
+                        Proin rutrum urna id odio maximus, ut tincidunt ante consectetur. Duis neque dui, ultricies et sapien quis, viverra vestibulum tortor.</div>
+                </div>
             </div>
         </div>
 
-        <div class="content" id="contact">Skontaktuj się z nami:</br>
-            </br>rose.studio@gmail.com</br>tel. 783001534 <br/></br> lub skorzystaj z formularza. Twoja odowiedź trwafi bezpośrednio do nas, a Ty otrzymasz kopię swojej wiadomości na podany adres mail.</div>
+        <div class="CSSgal">
+            <div class="sliderTitle copTitle">Zdjęcia z realizacji projektu Rose&Rush</div>
+            <s id="s1"></s>
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
 
+            <div class="slider" id="realization">
+                <img src=" images/realizacja (15).jpg " alt="Zdjęcie z realizacji projektu Rose&Rush">
+                <img src="images/realizacja (23).jpg" alt="Zdjęcie z realizacji projektu Rose&Rush">
+                <img src=" images/realizacja (1).jpg" alt="Zdjęcie z realizacji projektu Rose&Rush">
+                <img src=" images/realizacja (18).jpg" alt="Zdjęcie z realizacji projektu Rose&Rush">
+            </div>
+
+            <div class="prevNext">
+                <div>
+                    <a class="fas fa-angle-left" href="#s4"></a>
+                    <a class="fas fa-angle-right" href="#s2"></a>
+                </div>
+                <div>
+                    <a class="fas fa-angle-left" href="#s1"></a>
+                    <a class="fas fa-angle-right" href="#s3"></a>
+                </div>
+                <div>
+                    <a class="fas fa-angle-left" href="#s2"></a>
+                    <a class="fas fa-angle-right" href="#s4"></a>
+                </div>
+                <div>
+                    <a class="fas fa-angle-left" href="#s3"></a>
+                    <a class="fas fa-angle-right" href="#s1"></a>
+                </div>
+            </div>
+            <div class="bullets">
+
+                <a href="#s1">1</a>
+                <a href="#s2">2</a>
+                <a href="#s3">3</a>
+                <a href="#s4">4</a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="content" id="contact">
+
+        </div>
+        <div class="wrapper">
+
+            <div class="wrapperCon">
+                <div class="testd">
+                    <div class="contactIcon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="copDes2 ">rose.studio@gmail.com</div>
+                </div>
+                <div class="testd">
+                    <div class="contactIcon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="copDes2">tel. 783001534</div>
+                </div>
+            </div>
+        </div>
+        <div class="contactDes">Skontaktuj się z nami lub skorzystaj z formularza. Twoja odowiedź trwafi bezpośrednio do nas, a Ty otrzymasz kopię swojej wiadomości na podany adres mail.</div>
         <div class="content">
 
-            <form action="/action_page.php">
+            <form class="formstyle" action="/action_page.php">
                 <label for="name">Imię</label>
-                <input type="text" id="name" name="name" placeholder="Twoje imię..">
+                <input type="text" id="name" name="name">
 
                 <label for="email ">E-mail</label>
-                <input type="text" id="email" name="email" placeholder="Twój adres e-mail..">
+                <input type="text" id="email" name="email">
 
                 <label for="localisation">Miasto</label>
-                <input type="text" id="localisation" name="localisation" placeholder="np.Kraków..">
+                <input type="text" id="localisation" name="localisation">
 
                 <label for="size">Metraż</label>
-                <input type="text" id="size" name="size" placeholder="np.35mkw..">
+                <input type="text" id="size" name="size">
 
                 <label for="date">Termin realizacji projektu</label>
-                <input type="date" id="date" name="date" placeholder="np.II kwartał 2021..">
+                <input type="date" id="date" name="date">
 
                 <label for="range">Zakres projektu</label>
                 <select id="range" name="range">
@@ -148,7 +267,7 @@
 
 
                 <label for="message">Wiadomość</label>
-                <textarea id="message" name="message" placeholder="Miejsce na Twoją wiadomość.." style="height:200px"></textarea>
+                <textarea id="message" name="message" style="height:200px"></textarea>
 
                 <input type="submit" value="Wyślij">
             </form>
@@ -163,6 +282,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
