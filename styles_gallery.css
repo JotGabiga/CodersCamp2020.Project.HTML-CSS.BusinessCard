@@ -1,11 +1,11 @@
-.CSSgal {
+.gal {
     position: relative;
     overflow: hidden;
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.CSSgal .slider {
+.gal .slider {
     height: 100%;
     white-space: nowrap;
     font-size: 0;
@@ -13,7 +13,7 @@
     padding-top: 100px;
 }
 
-.CSSgal .slider>* {
+.gal .slider>* {
     font-size: 1rem;
     display: inline-block;
     white-space: normal;
@@ -24,7 +24,7 @@
     background-size: cover;
 }
 
-.CSSgal .prevNext {
+.gal .prevNext {
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -32,16 +32,16 @@
     height: 0;
 }
 
-.CSSgal .prevNext>div+div {
+.gal .prevNext>div+div {
     visibility: hidden;
 }
 
-.CSSgal .prevNext a+a {
+.gal .prevNext a+a {
     left: auto;
     right: 0;
 }
 
-.CSSgal .bullets {
+.gal .bullets {
     position: absolute;
     z-index: 2;
     bottom: 0;
@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-.CSSgal .bullets>a {
+.gal .bullets>a {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -62,15 +62,15 @@
     transition: 0.3s;
 }
 
-.CSSgal .bullets>a+a {
+.gal .bullets>a+a {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.CSSgal .bullets>a:hover {
+.gal .bullets>a:hover {
     background: rgba(255, 255, 255, 0.7) !important;
 }
 
-.CSSgal>s:target~.bullets>* {
+.gal>s:target~.bullets>* {
     background: rgba(255, 255, 255, 0.5);
 }
 
@@ -90,7 +90,7 @@
     background: rgba(255, 255, 255, 1);
 }
 
-.CSSgal>s:target~.prevNext>* {
+.gal>s:target~.prevNext>* {
     visibility: hidden;
 }
 
@@ -130,15 +130,19 @@
     -webkit-transform: translateX(-300%);
 }
 
-.CSSgal {
+.gal {
     color: #fff;
     text-align: center;
 }
 
-.CSSgal .slider img {
+.gal .slider img {
     height: calc(100vh - 90px);
     width: 100%;
     object-fit: contain;
+}
+
+.gal .prevNext div a {
+    margin: 0 10px 0 10px
 }
 
 .bullets a {
@@ -166,20 +170,17 @@
     color: rgb(196, 60, 60)
 }
 
-.sliderTitle {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 709px),
-(orientation: portrait) {}
+(orientation: portrait) {
+    .gal .slider img {
+        height: 100%;
+        padding-top: 65px;
+    }
+}
 
 @media only screen and (min-width: 710px) and (max-width: 900px),
 (orientation: portrait) {
-    .CSSgal .slider {
-        padding-top: 89px;
+    .gal .slider {
+        padding-top: 24px;
     }
 }
