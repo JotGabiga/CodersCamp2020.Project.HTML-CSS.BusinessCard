@@ -121,6 +121,21 @@
                     padding: 25px;
                     font-family: 'Source Sans Pro', sans-serif;
                     width: 30%;
+                    animation-name: logomove;
+                    animation-duration: 3s;
+                    position: relative;
+                }
+                
+                @keyframes logomove {
+                    0% {
+                        left: 0px;
+                    }
+                    50% {
+                        left: 100px;
+                    }
+                    100% {
+                        left: 0px;
+                    }
                 }
                 
                 .content {
@@ -228,19 +243,6 @@
                     font-family: 'Source Sans Pro', sans-serif;
                     font-weight: 300;
                     transition: opacity 1s;
-                }
-                
-                #projectDescription1 {
-                    top: 80%;
-                    left: 10%;
-                }
-                
-                #projectDescription2 {
-                    top: 80%;
-                    left: 10%;
-                }
-                
-                #projectDescription3 {
                     top: 80%;
                     left: 10%;
                 }
