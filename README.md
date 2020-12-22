@@ -33,7 +33,7 @@ Strona zawiera menu do którego podpięte są hiperłącza przenoszące użytkow
 3. Formularz kontaktowy
 
 Strona jest responsywna. Elementy strony zostały stworzone przy wykorzystaniu flexboxa. Zostały zaimportowane zewnętrzne fonty i ikony, głównie ze stron:
-https://fonts.google.com/\
-https://fontawesome.com/\
+https://fonts.google.com/
+https://fontawesome.com/
 Zdjęcia i grafiki prezentowanie na stronie pochodzą  z mojego archiwum. 
 
